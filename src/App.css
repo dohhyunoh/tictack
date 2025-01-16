@@ -1,0 +1,51 @@
+.square {
+  color: aqua;
+  font-size: 100px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ff0000; /* Initial color */
+  transition: background-color 2s ease;
+}
+
+@keyframes colorTransition {
+  0% {
+    background-color: #ff0000; /* Red */
+  }
+  50% {
+    background-color: #ff8000; /* Orange at halfway point */
+  }
+  100% {
+    background-color: #00ff00; /* Green */
+  }
+}
+
+.square:hover {
+  animation: colorTransition 1.5s infinite alternate;
+}
+
+.row1, .row2, .row3 {
+  text-align: center;
+}
+
+.next {
+  text-align: center;
+  color: white;
+}
+.animate {
+  animation: fontChange 2s infinite alternate;
+}
+
+
+@keyframes fontChange {
+  0% {
+    font-size: 2em;
+  }
+  50% {
+    font-size: 1.5em;
+  }
+  100% {
+    font-size: 1em;
+  }
+}
